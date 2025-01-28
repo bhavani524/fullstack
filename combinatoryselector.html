@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta cahrset="utf-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+<title>css combinatory selectors examples </title>
+<!----internal css to demonstrate various combinatory selectors---->
+</style>
+container p{
+color:blue;
+}
+container>p{
+font-weight:bold;
+}
+h2+p{
+color:green;
+}
+h2-p{
+font-size:14px;}
+</style>
+</head>
+<body>
+<div class="container">
+<p>paragraph is a descendant of container and is styled using the descendant selector</p>
+<div>
+<p> this paragraph is adescendant of container but not a direct child so only the color is applied</p>
+</div>
+<p>this  paragraph ois a direct child of container and is styled using both the descsendant and child selector.</p>
+</div>
+<h2>this  heading is an adjacent sibling example.</h2>
+<p>this paragraph is an adjacent sibling the h2 and is styled using ther adjacent sibling selector</p>
+<p>this paragraph is also a sibling of the h2 but is not immediately adjacent,so only the general sibling selector applies</p>
+</body>
+</html>
+ 
