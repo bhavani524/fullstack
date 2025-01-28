@@ -1,0 +1,28 @@
+<!doctype html>
+<html  lang="en">
+<head>
+<metacharset="utf-8">
+<metaname=viewport"
+content="width=device=width,initial-scale=1.0">
+<title>pseudo element selector example</title>
+<style>
+.example::before{
+content:"before:";
+color:blue;
+}
+.example::after{
+content:"after";
+color:green;
+}
+highlight::first-letter{
+font-size:2em;
+color:red;
+}
+</style>
+</head>
+<body>
+<h1>pseudo element selector example</h1>
+<p class ="example">this ia an example paragraph demonstrating the use of pseudo element.</p>
+<p class="highlight">this paragraph uses the ::first-letter pseudo-element to style the first letter pseudo-element to style the first letter.</p>
+</body>
+</html>
